@@ -7,6 +7,58 @@
 <meta name="description" content="12道题测出你的隐性人格倾向">
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <style>
+  /* 🔹结果页整体更紧凑 */
+.result-card {
+  padding:16px;               /* 原来20px → 更紧凑 */
+  border-radius:16px;
+  background:#111;
+}
+
+/* 🔹统一压缩所有文字间距 */
+.result-card h1,
+.result-card h2,
+.result-card h3,
+.result-card p {
+  margin-top:4px;
+  margin-bottom:4px;
+  line-height:1.3;
+}
+
+/* 🔹标题大小微调 */
+.result-card h1 {
+  font-size:22px;
+  font-weight:bold;
+}
+
+.result-card h2 {
+  font-size:16px;
+  opacity:0.9;
+}
+
+.result-card h3 {
+  font-size:15px;
+  opacity:0.85;
+}
+
+/* 🔹正文更紧凑 */
+.result-card p {
+  font-size:14px;
+  opacity:0.75;
+}
+
+/* 🔹图片间距优化 */
+.result-card img {
+  width:100%;
+  border-radius:12px;
+  margin-bottom:10px;  /* 原来15px → 更紧凑 */
+}
+
+/* 🔹按钮间距稍微压缩 */
+.result-card button {
+  margin-top:8px;
+  padding:14px;
+  font-size:14px;
+}
 body {
   font-family: Arial;
   background: linear-gradient(135deg,#000000,#000000,#000000);
@@ -85,10 +137,10 @@ const questions=[
 {text:"推动行动与执行的人",type:"RCLB",weight:2},
 {text:"配合参与、保持融入的人",type:"NTLP",weight:1}
 ]},
-{q:"面对不确定性时？",options:[
-{text:"尽可能分析所有可能性，保证过程稳定",type:"NTLP",weight:2},
-{text:"直接做决定，做了再说",type:"RCLB",weight:2},
-{text:"等待情况明朗再做决定",type:"NTLP",weight:1}
+{q:"在一次关于“规则与例外”的长时间讨论中，你更容易？",options:[
+{text:"沉浸在抽象概念里，试图构建一套自洽的解释",type:"NTLP",weight:2},
+{text:"更关注现实中的运用，甚至思考如何打破它",type:"RCLB",weight:2},
+{text:"觉得讨论有些过于复杂，更倾向于接受现状",type:"RCLB",weight:0.5}
 ]},
 {q:"你更倾向于哪种学习方式？",options:[
 {text:"通过系统性阅读构建完整知识框架",type:"NTLP",weight:2},

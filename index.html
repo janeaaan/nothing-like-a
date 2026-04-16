@@ -3,8 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-<title>你更像 Leopold 还是 Loeb？</title>
-<meta name="description" content="LnL测试">
+<title>你更像 Loeb 还是 Leopold？</title>
+<meta name="description" content="LnL测试，测测你更像是Nathan Leopold还是Richard Loeb。">
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <style>
   /* 🔹结果页整体更紧凑 */
@@ -110,17 +110,17 @@ const questions=[
 {q:"在一段空闲时间里，你更可能？",options:[
 {text:"沉浸在复杂的书或理论中",type:"NTLP",weight:2},
 {text:"计划一些不寻常的事情",type:"RCLB",weight:2},
-{text:"随意放松或打发时间",type:"NTLP",weight:1}
+{text:"随意放松或打发时间",type:"RCLB",weight:1}
 ]},
 {q:"面对一条规则时，你通常会？",options:[
 {text:"思考它背后的逻辑",type:"NTLP",weight:2},
 {text:"考虑是否有例外或漏洞",type:"RCLB",weight:2},
-{text:"大致遵守，不太多想",type:"NTLP",weight:1}
+{text:"大致遵守，不太多想",type:"RCLB",weight:1}
 ]},
 {q:"当你对某件事产生兴趣时？",options:[
 {text:"深入研究细节，钻研透彻",type:"NTLP",weight:2},
 {text:"尝试亲自体验，立马去做",type:"RCLB",weight:2},
-{text:"保持浅层了解，不过多接触",type:"NTLP",weight:1}
+{text:"保持浅层了解，不过多接触",type:"RCLB",weight:0.5}
 ]},
 {q:"当面对一个复杂、甚至带有某种“越界意味”的问题时，你更可能？",options:[
 {text:"先在脑中反复推演各种可能性，直到逻辑成立",type:"NTLP",weight:2},
@@ -130,7 +130,7 @@ const questions=[
 {q:"你更容易被什么吸引？",options:[
 {text:"抽象概念、系统性知识或结构",type:"NTLP",weight:2},
 {text:"刺激或具有挑战的事物",type:"RCLB",weight:2},
-{text:"轻松有趣的事物",type:"NTLP",weight:0.5}
+{text:"轻松有趣的事物",type:"RCLB",weight:0.5}
 ]},
 {q:"在群体中，你更像？",options:[
 {text:"提供思路与观点的人",type:"NTLP",weight:2},
@@ -150,14 +150,14 @@ const questions=[
 {q:"别人可能觉得你？",options:[
 {text:"理性且冷静，会先观察再判断",type:"NTLP",weight:2},
 {text:"表达直接，不太绕弯子",type:"RCLB",weight:2},
-{text:"不太显眼，习惯顺其自然",type:"NTLP",weight:0.5}
+{text:"不太显眼，习惯顺其自然",type:"NTLP",weight:1}
 ]},
 {q:"当遇到一件“似乎可以被重新定义边界”的事情时，你更可能？",options:[
 {text:"思考它在逻辑或理论上是否成立",type:"NTLP",weight:2},
 {text:"更关注是否能真正去实现或尝试",type:"RCLB",weight:2},
 {text:"觉得没有必要改变现状",type:"NTLP",weight:1}
 ]},
-{q:"当压力出现时？",options:[
+{q:"压力出现时？",options:[
 {text:"冷静思考并制定对策",type:"NTLP",weight:2},
 {text:"迅速行动，先解决问题",type:"RCLB",weight:2},
 {text:"暂时拖延或选择回避",type:"RCLB",weight:0.5}
@@ -165,7 +165,7 @@ const questions=[
 {q:"你更认同哪种说法？",options:[
  { text:"理解事物的本质更重要",type:"NTLP",weight:2},
  { text:"最终结果比过程更关键",type:"RCLB",weight:2},
- { text:"过程顺利比深究原因更重要",type:"RCLB",weight:1}
+ { text:"过程顺利比深究原因更重要",type:"RCLB",weight:0.5}
 ]}
 ];
 

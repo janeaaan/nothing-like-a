@@ -144,17 +144,17 @@ function showQuestion(){
 
   let html=`<h2>${q.q}</h2>`;
   q.opts.forEach((opt,i)=>{
-    let sel=answers[current]===opt.type?"selected":"";
+    let sel=answers[current]===i?"selected":"";
     html+=`<button class="${sel}" onclick="answer(${i})">${opt.text}</button>`;
   });
 
   document.getElementById("quiz").innerHTML=html;
   document.getElementById("prevBtn").style.display=current>0?"block":"none";
-  document.getElementById("bar").style.width=(current/qs.length*100)+"%";
+  ddocument.getElementById("bar").style.width=((current)/qs.length*100)+"%";
     document.getElementById("qProgress").innerText=`第 ${current+1} / ${qs.length} 题`;
 }
 
-function answer(i){answers[current]=qs[current].opts[i].type;current++;if(current<qs.length)showQuestion();else showResult();}
+function answer(i){answers[current]=i;current++;if(current<qs.length)showQuestion();else showResult();}
 function prevQuestion(){current--;showQuestion();}
 
 function showResult(){

@@ -32,7 +32,7 @@ button {
   padding: 16px;
   border:none;
   border-radius:12px;
-  font-size:14px;
+  font-size:15px;
   cursor:pointer;
   background:rgba(255,255,255,0.15);
   color:#fff;
@@ -185,13 +185,13 @@ let percent = total === 0
    <div id="resultImage" class="result-card">
 
 ${isNTLP
-  ? `<img src="ntlp.jpg" style="width:100%;border-radius:15px;margin-bottom:15px;">`
-  : `<img src="rclb.jpg" style="width:100%;border-radius:15px;margin-bottom:15px;">`
+  ? `<img src="ntlp.jpg" style="width:100%;border-radius:15px;margin-bottom:5px;">`
+  : `<img src="rclb.jpg" style="width:100%;border-radius:15px;margin-bottom:5px;">`
 }
 
 <h2>测试结果</h2>
       <h1>${title}</h1>
-<p style="opacity:0.7; margin-top:-5px;">
+<p style="opacity:0.7; margin-top:4px;">
   ${isNTLP ? "你是Nathan Leopold" : "你是Richard Loeb"}
 </p>
       <h3>${percent}% 匹配</h3>
@@ -218,4 +218,3 @@ showCover();
 </script>
 </body>
 </html>
-
